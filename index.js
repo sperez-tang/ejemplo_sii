@@ -5,7 +5,8 @@ const server = http.createServer((req, res) => {
   res.statusCode = 200;
   const msg = 'Hola Feature cambio idioma de sii!\n'
   const eng = 'Hello Feature language change!\n'
-  res.end(msg +  " " + eng);
+  const fr = 'Bonjour !\n'
+  res.end(msg + "" + eng + "" + fr);
 });
 
 server.listen(port, () => {
