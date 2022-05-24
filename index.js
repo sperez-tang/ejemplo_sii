@@ -1,10 +1,12 @@
 const http = require('http');
-const port = process.env.PORT || 3030;
+const port = process.env.PORT || 3040;
 
 const server = http.createServer((req, res) => {
   res.statusCode = 200;
   const msg = 'Hola Feature cambio idioma de sii!\n'
-  res.end(msg);
+  const fr = 'Bounjour!\n'
+  const eng = 'Hello world!\n'
+  res.end(msg + " " + fr + " " + eng);
 });
 
 server.listen(port, () => {
